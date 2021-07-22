@@ -1,11 +1,146 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-</head>
-<body>
-    <h1>Single</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+  </head>
+  <!-- Opening container for body -->
+  <body>
+    <!-- opening container for header -->
+    <header>
+      <!-- opening container for nav -->
+      <nav>
+        <!-- opening container for unordered list -->
+        <ul class="nav-links">
+          <li class="nav-links-item">INDEX</li>
+          <li class="nav-links-item">ABOUT</li>
+          <li class="nav-links-item">WORK</li>
+          <li class="nav-links-item">CONTACT</li>
+        </ul>
+        <!-- closing container for unordered list -->
+      </nav>
+      <!-- closing container for nav -->
+
+      <!-- opening section for content  -->
+      <section class="content">
+        <!-- opening section of flexed content -->
+        <div class="flex-content">
+          <h1 class="intro">HELLO I'M HAMID</h1>
+          <p class="paragraph">Welcome to my Website</p>
+          <p class="paragraph2">I'm A Self Taught Front End Developer</p>
+        </div>
+        <!-- closing section of flexed content -->
+      </section>
+      <!-- closing tag section for section -->
+    </header>
+    <!-- closing tag for header -->
+
+    <!-- opening tag for main -->
+    <main>
+      <!-- opening tag for section -->
+      <section class="top-section">
+        <!-- opening tag for div container -->
+        <div class="about">
+          <!-- opening tag for vertical line container  -->
+          <div class="vertical-line">
+            <!-- opening tag for h2 tag -->
+            <h2 class="about-me">ABOUT ME</h2>
+            <!-- closing tag for h2 tag -->
+          </div>
+          <!-- closing tag for div container -->
+          <p class="about-me-introduction">
+            I am a Self Taught Front End Developer Based in Nigeria.
+          </p>
+
+          <p class="more-info">
+            I offer Web design services with a strong passion of offering the
+            clean,neat <br />
+            and resposive designs. <br />
+            I specialize in Front-Web Development with tools such as HTML,CSS
+            <br />
+            and JavaScript with a bit of Knowledge in React.
+          </p>
+        </div>
+        <!-- closing tag for  works-->
+        <!-- closing tag for div container -->
+      </section>
+
+      <section class="second-section">
+        <div class="works">
+          <h2 class="about-me">WORKS</h2>
+        </div>
+      </section>
+
+      <section class="third-section">
+        <div class="Skills">
+          <h2 class="about-me">SKILLS</h2>
+        </div>
+      </section>
+
+      <section class="fourth-section">
+        <div class="Timeline">
+          <h2 class="about-me">TIMELINE</h2>
+        </div>
+      </section>
+
+      <section class="fifth-section">
+        <div class="contact-container">
+          <h2 class="about-me">CONTACT FORM</h2>
+          <div class="actual-contacts">
+            <form>
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-media">
+        <a
+          href="https://www.twitter.com/_dimah__"
+          target="_blank"
+          class="fa fa-twitter"
+          aria-label="twitter"
+        ></a>
+
+        <a
+          href="https://github.com/Codedzephyr"
+          target="_blank"
+          class="fa fa-github"
+          aria-hidden="true"
+          aria-label="github"
+        ></a>
+      </div>
+    </footer>
+  </body>
+  <!-- closing tag for body -->
 </html>
