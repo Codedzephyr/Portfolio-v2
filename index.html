@@ -17,12 +17,20 @@
       <!-- opening container for nav -->
       <nav>
         <!-- opening container for unordered list -->
-        <ul class="nav-links">
-          <li class="nav-links-item">INDEX</li>
-          <li class="nav-links-item">ABOUT</li>
-          <li class="nav-links-item">WORK</li>
-          <li class="nav-links-item">CONTACT</li>
-        </ul>
+        <img
+          src="./images/icon-hamburger.svg"
+          class="clickable"
+          id="navigation"
+          alt="navigation"
+        />
+        <div class="display" id="start">
+          <ul class="nav-links" id="navigation-bar">
+            <li class="nav-links-item">INDEX</li>
+            <li class="nav-links-item">ABOUT</li>
+            <li class="nav-links-item">WORK</li>
+            <li class="nav-links-item">CONTACT</li>
+          </ul>
+        </div>
         <!-- closing container for unordered list -->
       </nav>
       <!-- closing container for nav -->
@@ -31,7 +39,7 @@
       <section class="content">
         <!-- opening section of flexed content -->
         <div class="flex-content">
-          <h1 class="intro">HELLO I'M HAMID</h1>
+          <h1 id="intro"></h1>
           <p class="paragraph">Welcome to my Website</p>
           <p class="paragraph2">I'm A Self Taught Front End Developer</p>
         </div>
@@ -50,15 +58,15 @@
           <!-- opening tag for vertical line container  -->
           <div class="vertical-line">
             <!-- opening tag for h2 tag -->
-            <h2 class="about-me">ABOUT ME</h2>
+            <h2 class="about-me" id="title">ABOUT ME</h2>
             <!-- closing tag for h2 tag -->
           </div>
           <!-- closing tag for div container -->
-          <p class="about-me-introduction">
+          <p class="about-me-introduction" id="title1">
             I am a Self Taught Front End Developer Based in Nigeria.
           </p>
 
-          <p class="more-info">
+          <p class="more-info" id="title1">
             I offer Web design services with a strong passion of offering the
             clean,neat <br />
             and resposive designs. <br />
@@ -73,25 +81,33 @@
 
       <section class="second-section">
         <div class="works">
-          <h2 class="about-me">WORKS</h2>
+          <div class="vertical-line">
+            <h2 class="about-me" id="title">WORKS</h2>
+          </div>
         </div>
       </section>
 
       <section class="third-section">
         <div class="Skills">
-          <h2 class="about-me">SKILLS</h2>
+          <div class="vertical-line">
+            <h2 class="about-me" id="title">SKILLS</h2>
+          </div>
         </div>
       </section>
 
       <section class="fourth-section">
         <div class="Timeline">
-          <h2 class="about-me">TIMELINE</h2>
+          <div class="vertical-line">
+            <h2 class="about-me" id="title">TIMELINE</h2>
+          </div>
         </div>
       </section>
 
       <section class="fifth-section">
         <div class="contact-container">
-          <h2 class="about-me">CONTACT FORM</h2>
+          <div class="vertical-line">
+            <h2 class="about-me" id="title">CONTACT FORM</h2>
+          </div>
           <div class="actual-contacts">
             <form>
               <label for="fname">First Name</label>
@@ -141,6 +157,7 @@
         ></a>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
   <!-- closing tag for body -->
 </html>
