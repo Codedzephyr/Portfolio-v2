@@ -15,8 +15,9 @@ body {
   max-width: 100%;
 }
 
-.intro {
+#intro {
   font-family: "Josefin Sans", sans-serif;
+  line-height: 4.5rem;
 }
 
 #title1 {
