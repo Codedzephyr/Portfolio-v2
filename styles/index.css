@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -9,10 +13,6 @@
 
 body {
   max-width: 100%;
-}
-
-#title {
-  font-family: "Josefin Sans", sans-serif;
 }
 
 #title1 {
@@ -51,9 +51,16 @@ header nav ul li {
   margin: 0px 10px 0px 10px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.3rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
   color: whitesmoke;
 }
 
+header nav ul li a:hover {
+  color: gray;
+}
 section.content {
   min-height: calc(80vh - 12.8px);
   display: flex;
@@ -121,6 +128,7 @@ h2.about-me {
   font-size: 30px;
   padding-top: 10px;
   padding-left: 10px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 p.about-me-introduction {
@@ -186,30 +194,26 @@ div.timeline {
   min-height: calc(70vh - 12.8px);
 }
 
-section.fifth-section ::before {
+section.fifth-section {
   width: 100%;
   min-height: calc(80vh - 12.8px);
   background-image: url(/images/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-
-div.timeline {
-  width: 90%;
-  min-height: calc(70vh - 12.8px);
+  opacity: 0.9;
 }
 
 div.contact-container {
-  width: 90%;
+  width: 100%;
   min-height: calc(70vh - 12.8px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contain {
+  width: 90%;
 }
 
 div.actual-contacts {
@@ -242,9 +246,13 @@ textarea {
   outline: none;
 }
 
+textarea:focus {
+  background-color: whitesmoke;
+  color: black;
+}
+
 footer {
   min-height: calc(15vh - 12.8px);
-  background-color: #282828;
 }
 
 .fa {
@@ -302,14 +310,16 @@ footer {
 @media screen and (max-width: 768px) {
   nav ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    float: none;
   }
 
   header nav ul {
-    float: none;
+    float: left;
     margin-top: 0px;
     padding-top: 40px;
+    width: 100%;
   }
 
   img.clickable {
@@ -321,5 +331,9 @@ footer {
 
   .display {
     display: none;
+  }
+
+  #start {
+    min-height: calc(60vh - 12.8px);
   }
 }

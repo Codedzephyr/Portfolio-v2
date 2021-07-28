@@ -25,10 +25,12 @@
         />
         <div class="display" id="start">
           <ul class="nav-links" id="navigation-bar">
-            <li class="nav-links-item">INDEX</li>
-            <li class="nav-links-item">ABOUT</li>
-            <li class="nav-links-item">WORK</li>
-            <li class="nav-links-item">CONTACT</li>
+            <li class="nav-links-item"><a href="">INDEX</a></li>
+            <li class="nav-links-item"><a href="#title1">ABOUT</a></li>
+            <li class="nav-links-item"><a href="#title2">WORK</a></li>
+            <li class="nav-links-item"><a href="#title3">SKILLS</a></li>
+            <li class="nav-links-item"><a href="#title4">TIMELINE</a></li>
+            <li class="nav-links-item"><a href="#title5"> CONTACT</a></li>
           </ul>
         </div>
         <!-- closing container for unordered list -->
@@ -39,7 +41,7 @@
       <section class="content">
         <!-- opening section of flexed content -->
         <div class="flex-content">
-          <h1 id="intro"></h1>
+          <h1 id="intro">HELLO I'M HAMID</h1>
           <p class="paragraph">Welcome to my Website</p>
           <p class="paragraph2">I'm A Self Taught Front End Developer</p>
         </div>
@@ -82,7 +84,7 @@
       <section class="second-section">
         <div class="works">
           <div class="vertical-line">
-            <h2 class="about-me" id="title">WORKS</h2>
+            <h2 class="about-me" id="title2">WORKS</h2>
           </div>
         </div>
       </section>
@@ -90,7 +92,7 @@
       <section class="third-section">
         <div class="Skills">
           <div class="vertical-line">
-            <h2 class="about-me" id="title">SKILLS</h2>
+            <h2 class="about-me" id="title3">SKILLS</h2>
           </div>
         </div>
       </section>
@@ -98,65 +100,68 @@
       <section class="fourth-section">
         <div class="Timeline">
           <div class="vertical-line">
-            <h2 class="about-me" id="title">TIMELINE</h2>
+            <h2 class="about-me" id="title4">TIMELINE</h2>
           </div>
         </div>
       </section>
 
       <section class="fifth-section">
         <div class="contact-container">
-          <div class="vertical-line">
-            <h2 class="about-me" id="title">CONTACT FORM</h2>
-          </div>
-          <div class="actual-contacts">
-            <form>
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
-              />
+          <div class="contain">
+            <div class="vertical-line">
+              <h2 class="about-me" id="title5">CONTACT FORM</h2>
+            </div>
+            <div class="actual-contacts">
+              <form>
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Your name.."
+                />
 
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-              />
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Your last name.."
+                />
 
-              <label for="subject">Subject</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Write something.."
-                style="height: 200px"
-              ></textarea>
-            </form>
+                <label for="subject">Subject</label>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write something.."
+                  style="height: 200px"
+                ></textarea>
+              </form>
+            </div>
           </div>
         </div>
+
+        <footer>
+          <div class="social-media">
+            <a
+              href="https://www.twitter.com/_dimah__"
+              target="_blank"
+              class="fa fa-twitter"
+              aria-label="twitter"
+            ></a>
+
+            <a
+              href="https://github.com/Codedzephyr"
+              target="_blank"
+              class="fa fa-github"
+              aria-hidden="true"
+              aria-label="github"
+            ></a>
+          </div>
+        </footer>
       </section>
     </main>
 
-    <footer>
-      <div class="social-media">
-        <a
-          href="https://www.twitter.com/_dimah__"
-          target="_blank"
-          class="fa fa-twitter"
-          aria-label="twitter"
-        ></a>
-
-        <a
-          href="https://github.com/Codedzephyr"
-          target="_blank"
-          class="fa fa-github"
-          aria-hidden="true"
-          aria-label="github"
-        ></a>
-      </div>
-    </footer>
     <script src="./main.js"></script>
   </body>
   <!-- closing tag for body -->
