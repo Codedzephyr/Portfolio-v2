@@ -15,6 +15,21 @@ body {
   max-width: 100%;
 }
 
+#my-button {
+  border-radius: 50%;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  left: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 40px;
+  font-size: 38px; /* Increase font size */
+}
+
 #intro {
   font-family: "Josefin Sans", sans-serif;
   line-height: 4.5rem;
@@ -32,9 +47,11 @@ header {
   width: 100%;
 }
 
-.display {
-  display: block;
-}
+/* .display {
+   display: block; 
+  height: 300px;
+  transition: all ease-in-out 250ms;
+} */
 
 img.clickable {
   display: none;
@@ -100,6 +117,28 @@ p.paragraph2 {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.button3 {
+  background-color: #cd5c5c;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  color: whitesmoke;
+  padding: 15px 20px;
+  margin: 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
 section.top-section {
   width: 100%;
   min-height: calc(90vh - 12.8px);
@@ -223,6 +262,7 @@ p.description {
   color: whitesmoke;
   padding: 15px 20px;
   text-align: center;
+  font-family: "Josefin Sans", sans-serif;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
@@ -234,6 +274,7 @@ p.description {
   background-color: #722f37;
   border: none;
   color: whitesmoke;
+  font-family: "Josefin Sans", sans-serif;
   padding: 15px 20px;
   margin: 0px 20px;
   border-radius: 5px;
@@ -393,9 +434,8 @@ footer {
   font-size: 1.3rem;
 }
 
-.fa {
+#social {
   border-radius: 50%;
-  color: #ffffff !important;
   display: inline-block;
   height: 54px;
   line-height: 54px;
@@ -415,7 +455,7 @@ footer {
 
 .fa-twitter:hover {
   border: 1px solid #000;
-  color: #000 !important;
+  color: #000;
 }
 
 .fa-github {
@@ -426,7 +466,7 @@ footer {
 
 .fa-github:hover {
   border: 1px solid #000;
-  color: #000 !important;
+  color: #000;
 }
 
 .social-media {
@@ -444,9 +484,13 @@ footer {
   }
 
   header nav ul {
-    margin-top: 0px;
-    padding-top: 40px;
+    margin-top: 20px;
+    padding-top: 0px;
     width: 100%;
+  }
+
+  .flex-content {
+    margin: 10px 0px;
   }
 
   img.clickable {
@@ -456,12 +500,17 @@ footer {
     margin-right: 20px;
   }
 
-  .display {
-    display: none;
+  #start {
+    height: 0px;
+    overflow: hidden;
+    transition: all ease-in-out 250ms;
+    width: 100%;
   }
 
-  #start {
-    min-height: calc(60vh - 12.8px);
+  #start.display {
+    height: calc(40vh - 12.8px);
+    transition: all ease-in-out 250ms;
+    width: 100%;
   }
 
   .skills-container {
@@ -470,6 +519,10 @@ footer {
 
   .projects-container {
     flex-direction: column;
+  }
+
+  .button1 {
+    margin: 20px 20px 0px 0px;
   }
 }
 
